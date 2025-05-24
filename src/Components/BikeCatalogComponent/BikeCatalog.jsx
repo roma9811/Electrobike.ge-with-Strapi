@@ -1,6 +1,6 @@
  import { useState, useEffect } from 'react';
 import axios from 'axios';
-import {Button,Modal,Box,Typography,Fade,Select,MenuItem,InputLabel, FormControl,} from '@mui/material';
+import {Modal,Box,Typography,Fade,Select,MenuItem,InputLabel, FormControl,} from '@mui/material';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import './BikeCatalog.css';
@@ -186,9 +186,6 @@ const BikeCatalog = ({ externalWattFilter }) => {
                   ))}
                 </ul>
               )}
-              <Button onClick={handleClose} variant="contained" color="primary" sx={{ mt: 2 }}>
-                Close
-              </Button>
             </Box>
           </Box>
         </Fade>
