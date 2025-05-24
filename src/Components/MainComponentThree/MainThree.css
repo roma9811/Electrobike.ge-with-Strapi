@@ -1,0 +1,217 @@
+ .MainThree {
+    height: auto;
+    background-color: #C6CFD3;
+    padding-top: 150px;
+}
+
+.MainThreeContainer {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.Testimonials {
+    display: flex;
+    align-items: center;
+    color: #B9B6B6;
+    font-size: 20px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.CustomersSaid h1 {
+    font-size: 40px;
+    color: #B9B6B6;
+    margin-bottom: 45px;
+}
+
+.CustomersSaid p {
+    max-width: 550px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.CustomersTwo {
+    display: grid;
+    grid-template-columns: 40vh 40vh;
+    gap: 20px;
+}
+
+.CustomerBox {
+    border: 1px solid #B9B6B6;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.CustomerBox img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.CustomerBox h3 {
+    margin-bottom: 15px;
+}
+
+.Quotes img {
+    display: block;
+    max-width: 200px;
+    margin-top: 90px;
+    float: right;
+}
+
+@media screen and (max-width: 767px) {
+    .MainThreeContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .CustomersSaid h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .CustomersSaid p {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .CustomersTwo {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .CustomerBox {
+        padding: 30px;
+    }
+
+    .Testimonials {
+        flex-direction: column;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .Quotes img {
+        max-width: 120px;
+        margin-top: 40px;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .MainThreeContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 0 40px;
+    }
+
+    .CustomersSaid h1 {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .CustomersSaid p {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .CustomersTwo {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .CustomerBox {
+        padding: 25px;
+    }
+
+    .Testimonials {
+        font-size: 18px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Quotes img {
+        max-width: 160px;
+        margin-top: 60px;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+    .MainThree {
+        padding-top: 150px;
+    }
+
+    .MainThreeContainer {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        padding: 0 70px;
+    }
+
+    .Testimonials {
+        display: flex;
+        align-items: center;
+        color: #B9B6B6;
+        font-size: 20px;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .CustomersSaid h1 {
+        font-size: 40px;
+        color: #B9B6B6;
+        margin-bottom: 45px;
+        text-align: left;
+    }
+
+    .CustomersSaid p {
+        max-width: 600px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 35px;
+        text-align: left;
+    }
+
+    .CustomersTwo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .CustomerBox {
+        border: 1px solid #B9B6B6;
+        padding: 30px;
+    }
+
+    .CustomerBox img {
+        border-radius: 50%;
+        margin-bottom: 10px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .CustomerBox h3 {
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .Quotes img {
+        display: block;
+        max-width: 200px;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

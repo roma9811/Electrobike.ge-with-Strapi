@@ -1,0 +1,177 @@
+ .navContainer {
+  width: 100%;
+  padding: 15px 0 15px 0;
+  background-color: rgba(37, 37, 37, 0.897);   
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);  
+}
+
+.Logo img {
+  max-height: 50px;
+  cursor: pointer;
+}
+
+.headerContainer {
+  position: relative;
+  z-index: 10;
+}
+
+.NavBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.NavList ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.NavList li {
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+}
+
+.NavList li:hover {
+  color: #73933F;
+  opacity: 1;
+}
+
+.customBackground {
+  position: absolute;
+  background: rgb(148, 148, 148);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.3px);
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.NavBtn button {
+  background: linear-gradient(to bottom, #73933F 50%, rgba(235, 231, 231, 0.18) 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  width: 140px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: background-position 0.3s ease-in-out;
+  border: none;
+  color: white;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+.NavBtn button:hover {
+  background-position: bottom;
+  color: #73933F;
+}
+
+.BurgerMenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 25px;
+  right: 36px;
+  top: 15px;
+}
+
+.bm-burger-bars {
+  background: #73933F;
+  margin-top: 10px;
+}
+
+.bm-cross {
+  background: #73933F;
+  width: 56%;
+}
+
+.bm-menu {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  line-height: 80px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.bm-item {
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.bm-item:hover {
+  background-color: #73933F;
+  color: #1F1F1F;
+}
+
+@media screen and (max-width: 767px) {
+  .NavBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+  }
+  
+  .Logo img {
+    max-height: 50px;
+  }
+  
+  .NavList ul {
+    display: none;
+  }
+  
+  .desktopOnly {
+    display: none !important;
+  }
+  
+  .mobileOnly {
+    display: block !important;
+  }
+  
+  .Logo {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .Logo img {
+    max-height: 40px;
+  }
+  
+  .NavBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+  }
+  
+  .Logo {
+    display: flex;
+    justify-content: space-around;
+    gap: 500px;
+  }
+  
+  .desktopOnly {
+    display: none !important;
+  }
+  
+  .mobileOnly {
+    display: block !important;
+  }
+}

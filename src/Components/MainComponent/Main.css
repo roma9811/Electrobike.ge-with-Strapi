@@ -1,0 +1,515 @@
+ .Main {
+  height: auto;
+  background-color: #C6CFD3;
+  padding-bottom: 50px;
+}
+
+.MainContainer {
+  background-color: #1E1E1E;
+  height: 500px;
+  color: #B9B6B6;
+}
+
+.OurBikes {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 0 0 50px;
+}
+
+.OurBikes h2 {
+  background-color: rgba(22, 22, 22, 0.7);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.CarouselContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.BikesCarousel {
+  margin-top: 20px;
+  padding: 0 20px;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: visible;
+}
+
+.carousel-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.carousel-img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  filter: brightness(0.7);
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.carousel-img-wrapper:hover .carousel-img {
+  transform: scale(1.05);
+  filter: brightness(0.5);
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  z-index: 2;
+  text-align: center;
+  white-space: nowrap;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.carousel-img-wrapper:hover .image-text {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.image-text::before,
+.image-text::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+  margin: 6px auto;
+}
+
+.carousel-img-wrapper:hover .image-text::before,
+.carousel-img-wrapper:hover .image-text::after {
+  width: 100%;
+}
+
+.react-multiple-carousel__arrow {
+  background-color: #73933F !important;
+}
+
+/* Trending Section */
+
+.TrendningContainer {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+.TrendningBox {
+  display: flex;
+  gap: 50px;
+}
+
+.TrendingImage img {
+  max-height: 65vh;
+  height: auto;
+  width: auto;
+  padding-bottom: 30px;
+}
+
+.ModelsImage img {
+  max-height: 50vh;
+  height: auto;
+  width: auto;
+}
+
+.BikeImage img {
+  max-width: 100%;
+  height: auto;
+  max-height: 60vh;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.Bicycle h2 {
+  font-size: 30px;
+}
+
+.BikeName p {
+  font-size: 90px;
+}
+
+.StripContainer {
+  margin-top: 40px;
+}
+
+.StripText {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.StripText p {
+  max-width: 270px;
+  font-size: 20px;
+}
+
+.StripText img {
+  width: 100px;
+}
+
+.DiscoverBtn button {
+  background: linear-gradient(to bottom, #2E2C2C 50%, rgba(235, 231, 231, 0.18) 50%);
+  background-size: 100% 200%;
+  width: 170px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: background-position 0.3s ease-in-out;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: #2E2C2C;
+}
+
+.DiscoverBtn button:hover {
+  background-position: bottom;
+  color: #73933F;
+}
+
+/* Modal Gallery */
+
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  border: 3px solid #73933F !important;
+}
+
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:hover {
+  border: 3px solid #73933F !important;
+  padding: 5px !important;
+}
+
+.image-gallery-icon {
+  color: #73933F !important;
+}
+
+.image-gallery-slide .image-gallery-image {
+  width: 65% !important;
+  object-fit: contain !important;
+  padding: 15px;
+}
+
+.css-1ombtjx {
+  padding: 30px !important;
+}
+
+.css-4jbrbw li {
+  font-size: 17px !important;
+  line-height: 30px !important;
+  background-color: #B9B6B6;
+}
+
+.css-4jbrbw li:nth-child(odd) {
+  background-color: #B9B6B6;
+  padding: 1px;
+}
+
+.css-4jbrbw li:nth-child(even) {
+  background-color: #fff;
+  padding: 1px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .Main {
+    padding-bottom: 50px;
+    height: auto;
+  }
+
+  .OurBikes {
+    align-items: center;
+    padding: 30px 10px 0 30px;
+    gap: 15px;
+  }
+
+  .image-text {
+    font-size: 1rem;
+    padding: 4px 8px;
+  }
+
+  .BikesCarousel {
+    padding: 0 10px;
+  }
+
+  .TrendningContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 20px;
+  }
+
+  .TrendningBox {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .TrendingImage img {
+    max-height: 30vh;
+    height: auto;
+    width: auto;
+  }
+
+  .ModelsImage img {
+    max-height: 30vh;
+    height: auto;
+    width: auto;
+  }
+
+  .BikeImage img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  .Bicycle h2 {
+    font-size: 18px;
+  }
+
+  .BikeName p {
+    font-size: 50px;
+  }
+
+  .StripContainer {
+    margin-top: 20px;
+  }
+
+  .StripText {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .StripText p {
+    max-width: 270px;
+    min-width: 100px;
+    font-size: 16px;
+  }
+
+  .StripText img {
+    width: 100px;
+  }
+
+  .DiscoverBtn button {
+    width: 170px;
+    height: 45px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .Main {
+    padding-bottom: 80px;
+    background-color: #C6CFD3;
+  }
+
+  .OurBikes {
+    justify-content: center;
+    padding: 40px 20px 0 20px;
+    gap: 25px;
+  }
+
+  .carousel-img {
+    max-width: 250px;
+  }
+
+  .image-text {
+    font-size: 1.2rem;
+    padding: 6px 12px;
+  }
+
+  .BikesCarousel {
+    padding: 0 20px;
+  }
+
+  .TrendningContainer {
+    margin-top: 70px;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 10px;
+  }
+
+  .TrendningBox {
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .TrendingImage img,
+  .ModelsImage img {
+    max-height: 38vh;
+  }
+
+  .BikeImage img {
+    max-height: 350px;
+    max-width: 300px;
+  }
+
+  .Bicycle h2 {
+    font-size: 22px;
+  }
+
+  .BikeName p {
+    font-size: 60px;
+  }
+
+  .StripContainer {
+    margin-top: 40px;
+  }
+
+  .StripText {
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .StripText p {
+    max-width: 350px;
+    font-size: 18px;
+  }
+
+  .DiscoverBtn button {
+    width: 190px;
+    height: 50px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+  .Main {
+    padding-bottom: 100px;
+    background-color: #C6CFD3;
+  }
+
+  .OurBikes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 40px 0 40px;
+    gap: 40px;
+  }
+
+  .carousel-img {
+    max-width: 300px;
+  }
+
+  .image-text {
+    font-size: 1.4rem;
+    padding: 10px 15px;
+  }
+
+  .BikesCarousel {
+    padding: 0 50px;
+  }
+
+  .TrendningContainer {
+    margin-top: 90px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+  }
+
+  .TrendningBox {
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .TrendingImage img,
+  .ModelsImage img {
+    max-height: 42vh;
+  }
+
+  .BikeImage img {
+    max-height: 400px;
+    max-width: 350px;
+  }
+
+  .Bicycle h2 {
+    font-size: 26px;
+  }
+
+  .BikeName p {
+    font-size: 70px;
+  }
+
+  .StripContainer {
+    margin-top: 60px;
+  }
+
+  .StripText {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 70px;
+  }
+
+  .StripText p {
+    max-width: 450px;
+    font-size: 20px;
+  }
+
+  .StripText img {
+    width: 150px;
+  }
+
+  .DiscoverBtn button {
+    width: 210px;
+    height: 55px;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .BikesCarousel {
+    padding: 0 5px;
+  }
+  .TrendningBox {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .TrendingImage img,
+  .ModelsImage img {
+    max-height: 90vh;
+    margin-bottom: 10px;
+  }
+  .image-gallery-slide .image-gallery-image {
+  width: 40% !important;
+  object-fit: contain !important;
+  }
+  .css-1ombtjx {
+  padding:10px 60px 0 60px !important;
+
+ }
+}

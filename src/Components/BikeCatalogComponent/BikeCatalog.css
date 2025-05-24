@@ -1,0 +1,201 @@
+ .BikeCataLog {
+  padding: 20px;
+}
+
+.BikeCataLog h1 {
+  margin: 70px 0 50px 0;
+  background-color: #181818;
+  box-shadow: 0px 10px 15px #73933F;
+  padding: 10px;
+  max-width: 150px;
+  color: #C6CFD3;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.bike-item {
+  padding: 25px;
+  text-align: center;
+  cursor: pointer;
+  background: rgba(156, 156, 156, 0.164);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  position: relative;
+  max-height: 250px;
+}
+
+.bike-item:hover {
+  transform: scale(1.05);
+}
+
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 860px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.bike-image {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  border-radius: 5px;
+}
+
+.bike-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #C6CFD3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bike-item:hover .bike-overlay {
+  opacity: 1;
+}
+
+.bike-overlay span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  padding: 5px;
+}
+
+.bike-overlay span::before,
+.bike-overlay span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #B9B6B6;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.bike-overlay span::before {
+  top: 0;
+}
+
+.bike-overlay span::after {
+  bottom: 0;
+}
+
+.bike-item:hover .bike-overlay span::before,
+.bike-item:hover .bike-overlay span::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.bike-name {
+  color: #555555;
+  font-weight: bold;
+}
+
+.image-gallery-fullscreen-button {
+  display: none !important;
+}
+
+.css-10egq61 {
+  display: flex;
+}
+
+.css-1rr4qq7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+}
+
+.description-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.description-item {
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 17px;
+  line-height: 30px;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.description-item:nth-child(odd) {
+  background-color: #B9B6B6;
+  color: #333;
+}
+
+.description-item:nth-child(even) {
+  background-color: #fff;
+  color: #333;
+}
+
+.css-sziceh-MuiButtonBase-root-MuiButton-root {
+  background-color: #181818 !important;
+}
+
+.FiltrationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 25px;
+  }
+
+  .BikeCataLog {
+    padding: 10px;
+    min-width: auto;
+  }
+
+  .FiltrationContainer {
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 40px 0 40px;
+  }
+
+  .FiltrationBox {
+    margin-top: 15px;
+    display: flex;
+  }
+
+  .modal-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}

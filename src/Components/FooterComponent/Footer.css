@@ -1,0 +1,217 @@
+ .Footer {
+  background-color: #C6CFD3;
+  display: flex;
+  justify-content: center;
+  color: #C6CFD3;
+  padding-top: 150px;
+}
+
+.FooterContainer {
+  background-color: #1E1E1E;
+  max-width: 75%;
+  width: 100%;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  padding-bottom: 30px;
+}
+
+.ContactContainer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+
+.ContactBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.ContactBox p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.AboutCompany p {
+  max-width: 400px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.SocialMedia {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.CompanyText {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.Mail h3 {
+  margin-bottom: 10px;
+}
+
+.SendMail {
+  margin-top: 10px;
+}
+
+.CopyRight {
+  text-align: center;
+  margin-top: 25px;
+  color: #525252;
+}
+
+@media screen and (max-width: 767px) {
+  .Footer {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .FooterContainer {
+    max-width: 90%;
+    padding-bottom: 20px;
+  }
+
+  .ContactContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .ContactBox {
+    display: flex;
+    align-items: center;
+  }
+
+  .SocialMedia {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .CompanyText {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Mail {
+    padding: 20px 0 60px 0;
+  }
+
+  .Mail h3 {
+    font-size: 18px;
+  }
+
+  .CopyRight {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .Footer {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .FooterContainer {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .ContactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .ContactBox {
+    display: flex;
+    align-items: center;
+  }
+
+  .SocialMedia {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .CompanyText {
+    align-items: center;
+  }
+
+  .Mail h3 {
+    font-size: 18px;
+  }
+
+  .CopyRight {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+  .FooterContainer {
+    padding: 30px;
+    max-width: 80%;
+  }
+
+  .ContactContainer {
+    justify-content: space-around;
+    padding-top: 20px;
+    gap: 20px;
+  }
+
+  .ContactBox {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+
+  .ContactBox p {
+    font-size: 16px;
+  }
+
+  .AboutCompany p {
+    max-width: 450px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .SocialMedia {
+    display: flex;
+    gap: 20px;
+  }
+
+  .CompanyText {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .Mail {
+    padding: 0;
+  }
+
+  .Mail h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .SendMail {
+    margin-top: 15px;
+  }
+
+  .CopyRight {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 25px;
+  }
+}

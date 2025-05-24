@@ -1,0 +1,136 @@
+.header {
+    height:80dvh;
+    color:#fff;
+   
+  }
+  
+  .video-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height:120vh;
+    object-fit: cover;
+    z-index: -2;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+     height:120vh;
+    background-color: rgba(0, 0, 0, 0.479);  
+    z-index: -1;
+  }
+
+  .HeaderText{
+    display: flex;
+     margin-top:5vh;
+  }
+  .FreedomText{
+   font-size: 5.5vh;
+   text-align: center;
+   width: 100%;
+   margin-top: 2vh ;
+   text-shadow: 
+   1px 1px 0px #999,
+   2px 2px 0px #888,
+   3px 3px 0px #777,
+   4px 4px 0px #666,
+   5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .E_BikesText {
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-shadow: 1px 1px #999, 2px 2px #888, 2.5px 2.5px #777, 2px 2px 5px rgba(0, 0, 0, 0.5);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  .EbikeTextContainer {
+    max-width: 860px;
+    width: 90%;
+  }
+
+
+  @media screen and (max-width:767px){
+    .header {
+      height: auto;
+      color:#fff;
+    }
+    .HeaderText{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 70px;
+    }
+    .FreedomText{
+     font-size: 2.0vh;
+     text-align: center;
+     width: 100%;
+     margin-top: 0px ;
+    }
+  
+    .E_BikesText{
+      font-size: 2.5vh;
+      margin-top: 50px;
+      padding:50px;
+    }
+  }
+    
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    .header {
+      height: 85vh;
+    }
+    .HeaderText {
+      flex-direction: none;
+      align-items: center;
+      margin-top: 60px;
+    }
+  
+    .FreedomText {
+      font-size: 4vh;
+      margin-top: 20px;
+    }
+  
+    .E_BikesText {
+      font-size: 2.2vh;
+      padding: 50px;
+    
+      
+    }
+  }
+  @media screen and (orientation: landscape) and (max-width: 767px) {
+  .header {
+    height: 80vh;
+  }
+
+  .HeaderText {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .FreedomText {
+    font-size: 4.5vh;
+    margin-top: 20px;
+    padding: 0 10px;
+   
+  }
+
+  .E_BikesText {
+    font-size: 3.5vh;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    }
+
+  .EbikeTextContainer {
+    width: 95%;
+  }
+}
+
+ 

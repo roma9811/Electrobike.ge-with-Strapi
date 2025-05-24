@@ -1,0 +1,185 @@
+.MainTwo {
+  height: auto;
+}
+
+.MainTwoContainer {
+  position: relative;
+  background-image: url("../../Assets/road.png");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+.MainTwoContainer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.MainTextContainer {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.MainTextContainer p {
+  font-size: 130px;
+  color: #fff;
+  text-shadow: 
+    1px 1px 0px #999,
+    2px 2px 0px #888,
+    3px 3px 0px #777,
+    4px 4px 0px #666,
+    5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.CharacteristicsContainer {
+  height: auto;
+  background: linear-gradient(to bottom, #181F1A 0%, #2F3532 40%, #C6CFD3 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.CharacteristicsBox {
+  width: 100%;
+  height: 1300px;
+  background-color: #1E1E1E;
+  border-radius: 16px;
+  transform: translateY(-50px); 
+  z-index: 10;
+  position: relative;
+  border-radius: 70px;
+  color: #fff;
+  max-width: 120vh;
+  padding: 20px;
+}
+
+.CharacteristicsTextImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.CharacteristicsText {
+  max-width: 600px;
+  line-height: 30px;
+}
+
+.CharacteristicsText h1 {
+  margin: 20px 0 20px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .MainTextContainer {
+    margin-top: 50px;
+  }
+
+  .MainTwoContainer {
+    position: relative;
+    background-image: url("../../Assets/road.png");
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .MainTextContainer p {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .CharacteristicsContainer {
+    background: linear-gradient(to bottom, #181F1A 0%, #2F3532 40%, #C6CFD3 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CharacteristicsBox {
+    height: auto;
+    max-width: 90%;
+    padding: 20px;
+    transform: translateY(-30px);
+  }
+
+  .CharacteristicsTextImage {
+    flex-direction: column-reverse;
+    gap: 50px;
+    padding-bottom: 25px;
+  }
+
+  .CharacteristicsText {
+    max-width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .TextImageSplit {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .MainTextContainer {
+    margin-top: 50px;
+  }
+
+  .MainTwoContainer {
+    height: 220px;
+  }
+
+  .MainTextContainer p {
+    font-size: 55px;
+    text-align: center;
+  }
+
+  .CharacteristicsBox {
+    height: auto;
+    max-width: 90%;
+    padding: 20px;
+    transform: translateY(-30px);
+  }
+
+  .CharacteristicsTextImage {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .TextImageBlock {
+    flex-direction: column;
+  }
+
+  .CharacteristicsText {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .TextImageSplit {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .CharacteristicsBox {
+    font-size: 3vh;
+  
+  }
+  .CharacteristicsImage{
+  padding-bottom: 25px;
+  }
+}
