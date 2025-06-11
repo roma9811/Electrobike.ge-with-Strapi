@@ -52,4 +52,3 @@ Deployment:
 
 ---
 
-## Project Structure (Frontend)
