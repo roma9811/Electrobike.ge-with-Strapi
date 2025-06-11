@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+ # E-bike Catalog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and dynamic web application designed to showcase a collection of electric bikes.  
+This project uses **React** on the frontend, **Strapi** as a headless CMS, and **Material UI (MUI)** for stylish UI components.  
 
-## Available Scripts
+The main goal is to provide users with a smooth experience browsing, filtering, and viewing bike models in detail.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Purpose of the Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project was built as part of my frontend developer portfolio to demonstrate:
+- Working with CMS (Strapi) for content management
+- Dynamic data rendering using React
+- Integration of modals and carousels for better UX
+- Advanced styling with MUI
+- Animations using Framer Motion
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Grid layout: displays 8 bike models
+- Filtering by power: users can filter bikes based on engine power
+- Modal window: click a bike to see detailed information
+- Image carousel: each bike has a gallery with multiple images
+- Headless CMS: content managed via Strapi
+- Responsive design: optimized for desktop and mobile
+- Material UI: fast and clean component-based styling
+- Framer Motion: smooth UI animations and transitions
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Frontend:
+- React
+- JavaScript (ES6+)
+- MUI (Material UI)
+- React Multi Carousel
+- React Image Gallery
+- Framer Motion
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Backend (CMS):
+- Strapi
+- Node.js
+- PostgreSQL (optional)
 
-### `npm run eject`
+Deployment:
+- Frontend: Vercel  
+- Backend: Render (Strapi deployed to https://ebike-strapi.onrender.com)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Structure (Frontend)
