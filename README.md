@@ -51,4 +51,5 @@ Deployment:
 - Backend: Render (Strapi deployed to https://ebike-strapi.onrender.com)
 
 ---
-
+**Live Demo:**
+https://electrobike-ge-with-strapi.vercel.app
